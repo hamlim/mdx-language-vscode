@@ -1,0 +1,26 @@
+{
+    "name": "mdx-language-support",
+    "displayName": "mdx-language-support",
+    "description": "Add syntax support to MDX files",
+    "version": "0.0.1",
+    "publisher": "test",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mdx",
+            "aliases": ["mdx", "mdx"],
+            "extensions": [".mdx"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mdx",
+            "scopeName": "text.html.mdx",
+            "path": "./syntaxes/mdx.tmLanguage.json"
+        }]
+    }
+}
